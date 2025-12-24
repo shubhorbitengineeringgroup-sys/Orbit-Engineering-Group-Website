@@ -83,10 +83,9 @@ const Ecosystem = () => {
     return (
         <div className="min-h-screen bg-background">
             <Navigation />
-
-            {/* Valued Clients Section */}
-            <section className="pt-24 pb-12 bg-gradient-to-b from-background to-muted/30">
+            <section className="py-24 bg-gradient-to-b from-background to-muted/30">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Valued Clients Section */}
                     <div className="text-center mb-12 animate-fade-in-up">
                         <Badge variant="outline" className="mb-4 border-primary text-primary text-xl">
                             <img src={valuedClientsIcon} alt="Valued Clients" className="h-10 w-10 mr-3" />
@@ -100,7 +99,7 @@ const Ecosystem = () => {
                         </p>
                     </div>
 
-                    <div className="bg-gradient-to-br from-card to-card/80 border border-border rounded-3xl p-12 shadow-float overflow-hidden">
+                    <div className="bg-gradient-to-br from-card to-card/80 border border-border rounded-3xl p-12 shadow-float overflow-hidden mb-24">
                         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                             {clients.map((client, index) => (
                                 <Card key={index} className="group bg-gradient-to-br from-background/80 to-muted/30 rounded-xl text-center hover-lift transition-all duration-500 hover:scale-105 hover:shadow-lg border border-border/50 animate-scale-in">
@@ -114,17 +113,19 @@ const Ecosystem = () => {
                             ))}
                         </div>
                     </div>
-                </div>
-            </section>
 
-            {/* Partners Section (Moved here) */}
-            <section className="pt-12 pb-24 bg-gradient-to-b from-muted/30 to-background">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16 animate-fade-in-up">
-                        <Badge variant="secondary" className="mb-6 animate-bounce text-xl">
+                    {/* Our Partners Section (Moved here from Partners page) */}
+                    <div className="text-center mb-12 animate-fade-in-up">
+                        <Badge variant="secondary" className="mb-6 text-xl">
                             <img src={partnersIcon} alt="Our Partners" className="h-10 w-10 mr-3" />
                             Our Partners
                         </Badge>
+                        <h3 className="text-3xl font-bold mb-4">
+                            <span className="text-foreground">Global Technology</span> <span className="text-primary">Alliances</span>
+                        </h3>
+                        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            Collaborating with world-class leaders to bring the finest water technology solutions to India.
+                        </p>
                     </div>
 
                     <motion.div
@@ -144,11 +145,11 @@ const Ecosystem = () => {
                                         transition={{ duration: 0.5, delay: index * 0.1 }}
                                         whileHover={{ scale: 1.05, rotate: 1 }}
                                     >
-                                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl px-4 py-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 group-hover:border-primary/30 h-full flex flex-col items-center justify-center">
-                                            <div className="w-28 h-28 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center mb-6 group-hover:from-primary/20 group-hover:to-primary/30 transition-all duration-300 flex-shrink-0">
-                                                <img src={partner.logo} alt={partner.name} className="w-24 h-24 object-contain object-center group-hover:scale-110 transition-transform duration-300" style={{ objectPosition: 'center' }} />
+                                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 group-hover:border-primary/30 h-full flex flex-col items-center justify-center">
+                                            <div className="w-24 h-24 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:from-primary/20 group-hover:to-primary/30 transition-all duration-300 flex-shrink-0">
+                                                <img src={partner.logo} alt={partner.name} className="w-20 h-20 object-contain object-center group-hover:scale-110 transition-transform duration-300" style={{ objectPosition: 'center' }} />
                                             </div>
-                                            <h4 className="font-bold text-base text-center group-hover:text-primary transition-colors duration-300 leading-tight flex-shrink-0">{partner.name}</h4>
+                                            <h4 className="font-bold text-sm text-center group-hover:text-primary transition-colors duration-300 leading-tight flex-shrink-0">{partner.name}</h4>
                                         </div>
                                         {/* Decorative elements */}
                                         <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -158,9 +159,9 @@ const Ecosystem = () => {
                             </div>
                         </div>
                     </motion.div>
+
                 </div>
             </section>
-
             <ContactSection />
         </div>
     );
