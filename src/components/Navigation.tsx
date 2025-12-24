@@ -33,7 +33,7 @@ const Navigation = () => {
     { name: "Projects", href: "/projects" },
     { name: "Products", href: "/products" },
     { name: "Partners", href: "/partners" },
-    { name: "Clients", href: "/clients" },
+    { name: "Ecosystem", href: "/ecosystem" },
     { name: "Solutions", href: "/solutions" },
     { name: "Team", href: "/team" },
     { name: "About", href: "/about" },

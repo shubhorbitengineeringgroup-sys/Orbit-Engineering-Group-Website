@@ -13,9 +13,8 @@ import {
   MapPin
 } from "lucide-react";
 import careersImage from "@/assets/pioneering-force.jpeg";
-import founderCabinImage from "@/assets/sync-water-tech-new-office-founder-cabin.jpg";
-import outsideOfficeImage from "@/assets/sync-water-tech-new-office-pictures-outside-1.jpg";
-import receptionImage from "@/assets/sync-water-tech-new-office-reception.jpg";
+import founderCabinImage from "@/assets/vijay-sir-cabin.jpeg";
+import receptionImage from "@/assets/orbit-engineering-reception.jpeg";
 import { useEffect, useState } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 import ourTeamIcon from "@/assets/icons/our-team.png";
@@ -28,11 +27,6 @@ const OfficeCarousel = () => {
       src: founderCabinImage,
       alt: "Orbit Engineering Group - Founder cabin",
       title: "Orbit Engineering Group - Founder cabin",
-    },
-    {
-      src: outsideOfficeImage,
-      alt: "Orbit Engineering Group - Office exterior",
-      title: "Orbit Engineering Group - Office exterior",
     },
     {
       src: receptionImage,

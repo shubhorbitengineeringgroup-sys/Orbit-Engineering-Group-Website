@@ -12,7 +12,7 @@ import {
   Wifi
 } from "lucide-react";
 import villageProjectImage from "@/assets/village-project-2.jpg";
-import panoramicUpperLakeImage from "@/assets/panaromic-view-of-upperlake.jpg";
+import panoramicUpperLakeImage from "@/assets/panaromic-view-of-upperlake.jpeg";
 import innovativeTechnologyIcon from "@/assets/icons/innovative-technology.png";
 import automationSystemsIcon from "@/assets/icons/automation-systems.png";
 import digitalManagementIcon from "@/assets/icons/digital-management.png";
