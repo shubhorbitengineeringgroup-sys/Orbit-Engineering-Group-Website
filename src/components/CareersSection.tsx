@@ -19,7 +19,7 @@ const CareersSection = () => {
           <CardContent className="p-8">
             <div className="grid md:grid-cols-2 gap-10 items-start">
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold">At Sync Water Tech, you’ll:</h3>
+                <h3 className="text-2xl font-semibold">At Orbit Engineering Group, you’ll:</h3>
                 <div className="space-y-4">
                   {[
                     {
@@ -53,7 +53,7 @@ const CareersSection = () => {
                 <div className="relative overflow-hidden rounded-2xl shadow-float">
                   <img
                     src={careersImage}
-                    alt="Pioneering force in water technology at Sync Water Tech"
+                    alt="Pioneering force in water technology at Orbit Engineering Group"
                     className="w-full h-72 object-cover"
                   />
                 </div>
@@ -70,22 +70,22 @@ const CareersSection = () => {
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div className="flex items-center justify-center space-x-2">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Flat%20no.1%2C%20Block%2012%2C%20Shalimar%20Enclave%2C%20E3%20Arera%20Colony%2C%20Bhopal.%20462016"
+                href="https://www.google.com/maps/search/?api=1&query=Flat%20No.%202%2C%20Block%2012%2C%20Shalimar%20Enclave%2C%20E3%20Arera%20Colony%2C%20Bhopal%20462016"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm hover:text-primary transition-smooth"
               >
-                Flat no.1, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal. 462016
+                Flat No. 2, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal – 462016
               </a>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <a href="tel:+919425005008" className="text-sm hover:text-primary transition-smooth">
-                +91-9425005008
+              <a href="tel:+917024128029" className="text-sm hover:text-primary transition-smooth">
+                +91 70241 28029
               </a>
             </div>
             <div className="flex items-center justify-center space-x-2">
-              <a href="mailto:info@syncwatertech.com" className="text-sm hover:text-primary transition-smooth">
-                info@syncwatertech.com
+              <a href="mailto:info@orbitengineerings.com" className="text-sm hover:text-primary transition-smooth">
+                info@orbitengineerings.com
               </a>
             </div>
           </div>

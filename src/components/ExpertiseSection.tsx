@@ -22,7 +22,7 @@ const ExpertiseSection = () => {
             <span className="text-primary">Real‑Time Control — Turnkey Treatment, One Source</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            At Sync Water Tech, we deliver comprehensive, cutting-edge water and wastewater treatment solutions. Our expertise
+            At Orbit Engineering Group, we deliver comprehensive, cutting-edge water and wastewater treatment solutions. Our expertise
             spans water treatment plants, sewage and effluent systems, and cloud‑enabled IoT automation. We offer a robust
             portfolio — from RO systems, DM and UF units, to STPs in ASP, MBBR, and MBR configurations.
           </p>
@@ -37,14 +37,14 @@ const ExpertiseSection = () => {
                 <div>
                   <h3 className="text-2xl font-semibold mb-3">End‑to‑End Treatment Systems</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                  Our automation suite includes PLC 
-panels, sensors, and remote 
-monitoring tools. With high
-performance chemicals and 
-genuine spare parts like 
- 
-membranes and FRP vessels, we 
-ensure optimal system longevity.
+                    Our automation suite includes PLC
+                    panels, sensors, and remote
+                    monitoring tools. With high
+                    performance chemicals and
+                    genuine spare parts like
+
+                    membranes and FRP vessels, we
+                    ensure optimal system longevity.
                   </p>
                 </div>
               </div>
@@ -58,16 +58,16 @@ ensure optimal system longevity.
                 <div>
                   <h3 className="text-2xl font-semibold mb-3">Smart Water Solutions</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                  Our services cover installation, 
-commissioning, consultancy, and 
-turnkey O&M across all treatment 
-systems. We also provide expert 
-design, GPS survey, and 
-automation deployment, tailored 
-to your infrastructure needs. Trust 
-Sync Water Tech to engineer 
-efficiency, sustainability, and 
-control-every drop of the way.
+                    Our services cover installation,
+                    commissioning, consultancy, and
+                    turnkey O&M across all treatment
+                    systems. We also provide expert
+                    design, GPS survey, and
+                    automation deployment, tailored
+                    to your infrastructure needs. Trust
+                    Orbit Engineering Group to engineer
+                    efficiency, sustainability, and
+                    control-every drop of the way.
                   </p>
                 </div>
               </div>

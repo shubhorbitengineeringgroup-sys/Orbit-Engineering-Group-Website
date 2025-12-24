@@ -1,11 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Cog, 
-  MonitorSpeaker, 
-  Zap, 
-  Shield, 
-  BarChart3, 
+import {
+  Cog,
+  MonitorSpeaker,
+  Zap,
+  Shield,
+  BarChart3,
   Droplets,
   Settings,
   Cloud,
@@ -59,10 +59,10 @@ const FeaturesSection = () => {
               </Badge>
               <h3 className="text-3xl font-bold mb-6">Automation of Water Systems</h3>
               <p className="text-lg text-muted-foreground mb-8">
-                Sync Water Tech Pvt Ltd specialises in advanced automation — adopting state-of-the-art 
+                Orbit Engineering Group specialises in advanced automation — adopting state-of-the-art
                 technologies to enhance water resource management, efficiency and sustainability:
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   "Modernising existing infrastructure (dams, canals) to meet rising water demands.",
@@ -78,13 +78,13 @@ const FeaturesSection = () => {
                   </div>
                 ))}
               </div>
-              
+
               <p className="text-lg text-muted-foreground mt-8 font-medium">
-                Sync Water Tech empowers communities with smarter, greener, and more reliable water 
+                Orbit Engineering Group empowers communities with smarter, greener, and more reliable water
                 infrastructure across both rural and urban settings.
               </p>
             </div>
-            
+
             <div className="space-y-6">
               <div className="relative -mt-8">
                 <img
@@ -112,10 +112,10 @@ const FeaturesSection = () => {
               </Badge>
               <h3 className="text-3xl font-bold mb-6">Online Works Management System (OWMS)</h3>
               <p className="text-lg text-muted-foreground mb-8">
-                Our Online Works Management System completely digitises and streamlines public-works 
+                Our Online Works Management System completely digitises and streamlines public-works
                 project management—delivering efficiency, transparency and timely execution:
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   "Digital, centralised workflow from planning to completion on one unified platform.",
@@ -145,11 +145,11 @@ const FeaturesSection = () => {
               Fusion Tech: Durable Joints, Compact Treatment, <span className="text-primary">Sustainable Water</span>
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-4xl">
-              "Fusion" technologies are pivotal in delivering resilient, sustainable water infrastructure. 
-              From weld-strength pipe joints to compact, high-performance wastewater treatment systems, 
+              "Fusion" technologies are pivotal in delivering resilient, sustainable water infrastructure.
+              From weld-strength pipe joints to compact, high-performance wastewater treatment systems,
               fusion engineering upholds water system integrity and ecological responsibility.
             </p>
-            
+
             <h4 className="text-xl font-semibold mb-6">Key Benefits & Advantages</h4>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
@@ -169,7 +169,7 @@ const FeaturesSection = () => {
                   </div>
                 ))}
               </div>
-              
+
               <div className="space-y-4">
                 {[
                   {

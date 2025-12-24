@@ -10,8 +10,8 @@ const FAQSection = () => {
   const [openItems, setOpenItems] = useState<number[]>([0]);
 
   const toggleItem = (index: number) => {
-    setOpenItems(prev => 
-      prev.includes(index) 
+    setOpenItems(prev =>
+      prev.includes(index)
         ? prev.filter(i => i !== index)
         : [...prev, index]
     );
@@ -20,7 +20,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "What types of water treatment solutions do you offer?",
-      answer: "Sync WaterTech offers a wide range of water treatment solutions to meet various needs, including: Water filtration systems: Remove impurities, contaminants, and suspended solids from water. Water softening systems: Reduce the hardness of water by removing calcium and magnesium ions. Disinfection systems: Eliminate harmful bacteria, viruses, and other microorganisms. Wastewater treatment systems: Treat wastewater to remove pollutants and contaminants before discharge."
+      answer: "Orbit Engineering Group offers a wide range of water treatment solutions to meet various needs, including: Water filtration systems: Remove impurities, contaminants, and suspended solids from water. Water softening systems: Reduce the hardness of water by removing calcium and magnesium ions. Disinfection systems: Eliminate harmful bacteria, viruses, and other microorganisms. Wastewater treatment systems: Treat wastewater to remove pollutants and contaminants before discharge."
     },
     {
       question: "How do your SCADA systems help optimise water distribution?",
@@ -36,8 +36,8 @@ const FAQSection = () => {
     },
     {
       question: "How can I contact your customer support team?",
-      answer: "You can contact our customer support team by phone, email, or through our website contact form. Our team is available to assist you with any questions: "+
-        "<a href=\"mailto:info@synctech.com\" class=\"text-primary underline\">info@synctech.com</a>"
+      answer: "You can contact our customer support team by phone, email, or through our website contact form. Our team is available to assist you with any questions: " +
+        "<a href=\"mailto:info@orbitengineerings.com\" class=\"text-primary underline\">info@orbitengineerings.com</a>"
     }
   ];
 
@@ -55,7 +55,7 @@ const FAQSection = () => {
             </h2>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get answers to common questions about our water treatment solutions, 
+            Get answers to common questions about our water treatment solutions,
             technologies, and services. Can't find what you're looking for? Contact our team.
           </p>
         </div>
@@ -64,7 +64,7 @@ const FAQSection = () => {
         <div className="space-y-4 mb-12">
           {faqs.map((faq, index) => (
             <Card key={index} className="hover-lift border-0 shadow-water bg-card/80 backdrop-blur-sm overflow-hidden">
-              <CardHeader 
+              <CardHeader
                 className="cursor-pointer transition-smooth hover:bg-muted/50"
                 onClick={() => toggleItem(index)}
               >
@@ -79,7 +79,7 @@ const FAQSection = () => {
                   </div>
                 </CardTitle>
               </CardHeader>
-              
+
               {openItems.includes(index) && (
                 <CardContent className="pt-0 animate-fade-in-up">
                   <div className="border-t border-border pt-4">

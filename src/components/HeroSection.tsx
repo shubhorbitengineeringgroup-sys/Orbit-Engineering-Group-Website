@@ -37,12 +37,12 @@ const HeroSection = () => {
               <Sparkles className="w-4 h-4 text-primary mr-2" />
               <span className="text-sm font-semibold text-foreground">Founded 2022 • ISO 9001 Certified</span>
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-              <span className="text-foreground block animate-slide-in-left"> Water Tech for a 
-              Greener</span>
-              <span className="text-primary block py-2 animate-slide-in-right"> Resilient and Sustainable 
-              Tomorrow</span>
+              <span className="text-foreground block animate-slide-in-left"> Water Tech for a
+                Greener</span>
+              <span className="text-primary block py-2 animate-slide-in-right"> Resilient and Sustainable
+                Tomorrow</span>
             </h1>
 
             {/* Mobile hero image directly below heading */}
@@ -65,7 +65,7 @@ const HeroSection = () => {
 
             <div className="space-y-5 text-xl text-muted-foreground leading-relaxed max-w-3xl animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               <p className="text-foreground font-medium">
-                <span className="text-primary font-semibold">Sync Water Tech Pvt Ltd</span> propels water management beyond convention — harnessing
+                <span className="text-primary font-semibold">Orbit Engineering Group</span> propels water management beyond convention — harnessing
                 <span className="text-primary"> process automation, SCADA, Industry 4.0, cloud technologies</span>, and precision instrumentation to
                 solve real-world water challenges in rural and urban India.
               </p>
@@ -73,7 +73,7 @@ const HeroSection = () => {
                 <>
                   <p className="text-foreground">
                     Founded in April 2022 in Bhopal, the company builds on a legacy exceeding <span className="text-primary font-semibold">four decades of
-                    engineering excellence</span> through its parent firms, Rajat Engineering and Orbit Engineering, to deliver turnkey systems — from design
+                      engineering excellence</span> through its parent firms, Rajat Engineering and Orbit Engineering, to deliver turnkey systems — from design
                     and steel fabrication to PLC/SCADA integration and long-term O&amp;M — through an <span className="text-primary font-semibold">ISO 9001‑certified</span>
                     &nbsp;quality framework that guarantees reliability and ecological accountability.
                   </p>
@@ -86,7 +86,7 @@ const HeroSection = () => {
                     build water systems grounded in environmental stewardship and social well-being — empowering quality water infrastructure across India and beyond.
                   </p>
                   <p className="text-foreground font-semibold">
-                    At Sync Water Tech, every project is a promise fulfilled — for a <span className="text-primary">cleaner, more resilient tomorrow</span>.
+                    At Orbit Engineering Group, every project is a promise fulfilled — for a <span className="text-primary">cleaner, more resilient tomorrow</span>.
                   </p>
                 </>
               )}
@@ -125,7 +125,7 @@ const HeroSection = () => {
                 <div className="text-2xl font-black mb-2"><Counter end={100} suffix="%" duration={1000} /></div>
                 <div className="text-xs font-medium">Automation</div>
               </div>
-              
+
               <div className="lg:absolute lg:-bottom-4 lg:-left-4 bg-accent text-accent-foreground rounded-2xl p-6 shadow-lg animate-float mt-4" style={{ animationDelay: '0.5s' }}>
                 <div className="text-2xl font-black mb-2"><Counter end={24} />/7</div>
                 <div className="text-xs font-medium">Monitoring</div>

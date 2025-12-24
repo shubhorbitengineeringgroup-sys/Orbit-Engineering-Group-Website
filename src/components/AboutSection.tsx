@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Leaf, 
-  Users, 
-  Award, 
+import {
+  Leaf,
+  Users,
+  Award,
   Brain,
   Clock,
   CheckCircle,
@@ -55,24 +55,24 @@ const AboutSection = () => {
         {/* Hero Section */}
         <div className="text-center mb-20">
           <Badge variant="secondary" className="mb-6 text-xl">
-            <img src={aboutSyncWaterTechIcon} alt="About Sync WaterTech" className="h-10 w-10 mr-3" />
-            About Sync WaterTech
+            <img src={aboutSyncWaterTechIcon} alt="About Orbit Engineering Group" className="h-10 w-10 mr-3" />
+            About Orbit Engineering Group
           </Badge>
-          
+
           <h2 className="text-5xl md:text-6xl font-bold mb-8 leading-tight">
-            <span className="text-foreground">Sync WaterTech: Pioneering Water</span>
+            <span className="text-foreground">Orbit Engineering Group: Pioneering Water</span>
             <br />
             <span className="text-primary">Innovation with 40 Years of</span>
             <br />
             <span className="text-primary">Engineering Excellence</span>
           </h2>
-          
+
           <div className="bg-gradient-to-r from-primary/5 to-accent/5 border border-border rounded-3xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-primary">
               Fortifying the Future of Water Management
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Sync Water Tech, we've merged the formidable 40-year legacy of Rajat Engineering with Orbit 
+              At Orbit Engineering Group, we've merged the formidable 40-year legacy of Rajat Engineering with Orbit
               Engineering's instrumentation mastery to set a new standard in water technology.
             </p>
           </div>
@@ -82,10 +82,10 @@ const AboutSection = () => {
         <div className="mb-20">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold mb-4">
-              Why Sync WaterTech <span className="text-primary">Stands Apart</span>
+              Why Orbit Engineering Group <span className="text-primary">Stands Apart</span>
             </h3>
           </div>
-          
+
           {/* Village Project Section */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
@@ -135,13 +135,13 @@ const AboutSection = () => {
         <div className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 border border-border rounded-3xl p-12 shadow-float hover-glow transition-smooth mb-16">
           <div className="text-center max-w-4xl mx-auto">
             <h3 className="text-4xl font-bold mb-8">
-              <span className="text-foreground">Sync WaterTech: Where Legacy</span>
+              <span className="text-foreground">Orbit Engineering Group: Where Legacy</span>
               <br />
               <span className="text-primary">Meets Innovation</span>
             </h3>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              By unifying decades of engineering know-how with cutting-edge, sustainable instrumentation, 
-              we redefine what's possible in water technology. Partner with Sync WaterTech to experience 
+              By unifying decades of engineering know-how with cutting-edge, sustainable instrumentation,
+              we redefine what's possible in water technology. Partner with Orbit Engineering Group to experience
               intelligent, impactful, and responsible water solutions—today and for the future.
             </p>
             <div className="text-2xl font-bold text-primary bg-primary/10 px-8 py-4 rounded-2xl inline-block">
@@ -158,17 +158,17 @@ const AboutSection = () => {
             </h3>
             <div className="space-y-2">
               <p className="text-xl text-muted-foreground">
-                Sync Water Tech Pvt Ltd
+                Orbit Engineering Group
               </p>
               <p className="text-2xl font-bold text-primary">
                 Your turnkey partner for sustainable water solutions
               </p>
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
-            <a 
-              href="https://maps.google.com/maps?q=Flat+no.1,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal.+462016"
+            <a
+              href="https://maps.google.com/maps?q=Flat+No.+2,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal+462016"
               target="_blank"
               rel="noopener noreferrer"
               className="text-center p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 hover-lift transition-smooth border border-border hover:shadow-lg cursor-pointer"
@@ -178,12 +178,12 @@ const AboutSection = () => {
               </div>
               <h4 className="text-xl font-bold mb-4">Address</h4>
               <p className="text-muted-foreground leading-relaxed hover:text-primary transition-colors">
-                Flat no.1, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal. 462016
+                Flat No. 2, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal – 462016
               </p>
             </a>
-            
-            <a 
-              href="tel:+919425005008"
+
+            <a
+              href="tel:+917024128029"
               className="text-center p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 hover-lift transition-smooth border border-border hover:shadow-lg cursor-pointer"
             >
               <div className="inline-flex items-center justify-center p-4 bg-primary text-primary-foreground rounded-full mb-6">
@@ -191,12 +191,12 @@ const AboutSection = () => {
               </div>
               <h4 className="text-xl font-bold mb-4">Phone</h4>
               <p className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">
-                +91-9425005008
+                +91 70241 28029
               </p>
             </a>
-            
-            <a 
-              href="mailto:info@syncwatertech.com"
+
+            <a
+              href="mailto:info@orbitengineerings.com"
               className="text-center p-8 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 hover-lift transition-smooth border border-border hover:shadow-lg cursor-pointer"
             >
               <div className="inline-flex items-center justify-center p-4 bg-primary text-primary-foreground rounded-full mb-6">
@@ -204,13 +204,13 @@ const AboutSection = () => {
               </div>
               <h4 className="text-xl font-bold mb-4">Email</h4>
               <p className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">
-                info@syncwatertech.com
+                info@orbitengineerings.com
               </p>
             </a>
           </div>
         </div>
 
-        
+
       </div>
     </section>
   );

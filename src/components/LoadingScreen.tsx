@@ -28,9 +28,9 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       <div className="relative flex flex-col items-center">
         {/* Logo Animation */}
         <div className="relative mb-8">
-          <img 
-            src={logo} 
-            alt="SyncWaterTech Logo" 
+          <img
+            src={logo}
+            alt="Orbit Engineering Group Logo"
             className="h-32 w-32 object-contain animate-bounce-in"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-primary/20 animate-gradient-x"></div>
@@ -44,7 +44,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
             <div className="w-2 h-2 bg-primary rounded-full animate-bounce" style={{ animationDelay: '0.4s' }} />
           </div>
           <p className="text-lg font-medium text-foreground/80 animate-pulse">
-            Loading Sync WaterTech
+            Loading Orbit Engineering Group
           </p>
         </div>
 

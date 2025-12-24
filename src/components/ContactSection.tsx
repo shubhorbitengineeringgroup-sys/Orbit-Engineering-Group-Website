@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
   Send,
   MessageSquare,
   ArrowRight
@@ -42,22 +42,59 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+91-9425005008",
-      action: "tel:+919425005008",
+      value: "+91 70241 28029",
+      action: "tel:+917024128029",
       description: "Call us directly for immediate assistance"
     },
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      value: "info@syncwatertech.com",
-      action: "mailto:info@syncwatertech.com",
+      value: (
+        <div className="flex flex-col gap-1">
+          <a href="mailto:vijaytiwari@orbitengineerings.com" className="hover:text-primary transition-colors hover:underline">vijaytiwari@orbitengineerings.com</a>
+          <a href="mailto:info@orbitengineerings.com" className="hover:text-primary transition-colors hover:underline">info@orbitengineerings.com</a>
+          <a href="mailto:sales@orbitengineerings.com" className="hover:text-primary transition-colors hover:underline">sales@orbitengineerings.com</a>
+        </div>
+      ),
+      action: "mailto:info@orbitengineerings.com",
       description: "Send us an email for detailed inquiries"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Address",
-      value: "Flat no.1, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal. 462016",
-      action: "https://maps.google.com/?q=Flat+no.1,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal+462016",
+      value: (
+        <div className="flex flex-col gap-4">
+          <a
+            href="https://maps.google.com/?q=Flat+No.+2,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal+462016"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:text-primary transition-colors group"
+          >
+            <span className="font-semibold block text-primary/90 mb-1 group-hover:text-primary group-hover:underline">Working Office:</span>
+            <span className="group-hover:underline">
+              Flat No. 2, Block 12, Shalimar Enclave,
+              <br />
+              E3 Arera Colony, Bhopal – 462016
+            </span>
+          </a>
+          <a
+            href="https://maps.google.com/?q=B-32/A,+Priyadershini+Society,+Sant+Asharam+Nagar,+Bagsewaniya,+Bhopal+462043"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:text-primary transition-colors group"
+          >
+            <span className="font-semibold block text-primary/90 mb-1 group-hover:text-primary group-hover:underline">Head Office:</span>
+            <span className="group-hover:underline">
+              B-32/A, Priyadershini Society,
+              <br />
+              Sant Asharam Nagar, Bagsewaniya,
+              <br />
+              Bhopal – 462043
+            </span>
+          </a>
+        </div>
+      ),
+      action: "https://maps.google.com/?q=Flat+No.+2,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal+462016",
       description: "Visit our office for consultations"
     }
   ];
@@ -79,36 +116,42 @@ const ContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-        {/* Contact Information */}
-        <div className="space-y-8 animate-slide-in-left">
-          
+          {/* Contact Information */}
+          <div className="space-y-8 animate-slide-in-left">
 
-          {/* Contact Cards */}
-          <div className="space-y-4">
-            {contactInfo.map((info, index) => (
-              <Card key={index} className="hover-lift border-0 shadow-water bg-card/80 backdrop-blur-sm transform transition-all duration-300 hover:scale-105">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-primary/10 text-primary rounded-lg">
-                      {info.icon}
+
+            {/* Contact Cards */}
+            <div className="space-y-4">
+              {contactInfo.map((info, index) => (
+                <Card key={index} className="hover-lift border-0 shadow-water bg-card/80 backdrop-blur-sm transform transition-all duration-300 hover:scale-105">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="p-3 bg-primary/10 text-primary rounded-lg">
+                        {info.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold mb-1">{info.title}</h4>
+                        <p className="text-sm text-muted-foreground mb-2">{info.description}</p>
+                        {typeof info.value === 'string' ? (
+                          <a
+                            href={info.action}
+                            target={info.title === "Address" ? "_blank" : "_self"}
+                            rel={info.title === "Address" ? "noopener noreferrer" : ""}
+                            className="text-primary hover:text-primary/80 transition-smooth font-medium text-sm break-all"
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <div className="text-primary hover:text-primary/80 transition-smooth font-medium text-sm break-all">
+                            {info.value}
+                          </div>
+                        )}
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold mb-1">{info.title}</h4>
-                      <p className="text-sm text-muted-foreground mb-2">{info.description}</p>
-                      <a
-                        href={info.title === "Address" ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Flat no.1, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal, Madhya Pradesh 462016, India")}` : info.action}
-                        target={info.title === "Address" ? "_blank" : "_self"}
-                        rel={info.title === "Address" ? "noopener noreferrer" : ""}
-                        className="text-primary hover:text-primary/80 transition-smooth font-medium text-sm break-all"
-                      >
-                        {info.value}
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
 
             {/* Business Hours */}
             <Card className="border-0 shadow-water bg-card/80 backdrop-blur-sm">
@@ -120,9 +163,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Business Hours</h4>
                     <p className="text-sm text-muted-foreground">
-                      Monday - Saturday: 9:00 AM - 6:00 PM
+                      Monday – Saturday: 10:00 AM – 7:00 PM
                       <br />
-                      24/7 Emergency Support Available
+                      Sunday: Closed
                     </p>
                   </div>
                 </div>
@@ -204,9 +247,9 @@ const ContactSection = () => {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    size="lg" 
+                  <Button
+                    type="submit"
+                    size="lg"
                     className="w-full bg-water-gradient hover:shadow-glow transition-smooth"
                   >
                     Send Message
@@ -221,9 +264,9 @@ const ContactSection = () => {
               <p className="text-muted-foreground mb-4">
                 Need immediate assistance or have a complex project?
               </p>
-              <Button 
-                size="lg" 
-                variant="outline" 
+              <Button
+                size="lg"
+                variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               >
                 Schedule a Consultation
@@ -239,14 +282,14 @@ const ContactSection = () => {
             <CardContent className="p-0">
               <div className="relative">
                 <iframe
-                  src="https://maps.google.com/maps?q=Flat+no.1,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal,+Madhya+Pradesh+462016&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Flat+No.+2,+Block+12,+Shalimar+Enclave,+E3+Arera+Colony,+Bhopal+462016&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Sync Water Tech Office Location"
+                  title="Orbit Engineering Group Office Location"
                   className="w-full h-64"
                 ></iframe>
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
@@ -255,8 +298,8 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-semibold text-sm">Visit Our Office</h4>
                       <p className="text-xs text-muted-foreground">
-                        Flat no.1, Block 12, Shalimar Enclave,<br />
-                        E3 Arera Colony, Bhopal. 462016
+                        Flat No. 2, Block 12, Shalimar Enclave,<br />
+                        E3 Arera Colony, Bhopal – 462016
                       </p>
                     </div>
                   </div>

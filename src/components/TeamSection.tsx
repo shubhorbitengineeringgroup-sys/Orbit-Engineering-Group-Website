@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import rohitAroraImage from "@/assets/team/rohit-arora-2.jpg";
+import manojTiwariImage from "@/assets/team/manoj-tiwari.jpeg";
 import vijayTiwariImage from "@/assets/team/vijay-tiwari-2.jpg";
-import { 
-  Users, 
-  Award, 
-  Briefcase, 
+import {
+  Users,
+  Award,
+  Briefcase,
   ArrowRight,
   Mail,
   Phone,
@@ -26,18 +26,18 @@ const OfficeCarousel = () => {
   const slides = [
     {
       src: founderCabinImage,
-      alt: "Sync Water Tech - Founder cabin",
-      title: "Sync Water Tech - Founder cabin",
+      alt: "Orbit Engineering Group - Founder cabin",
+      title: "Orbit Engineering Group - Founder cabin",
     },
     {
       src: outsideOfficeImage,
-      alt: "Sync Water Tech - Office exterior",
-      title: "Sync Water Tech - Office exterior",
+      alt: "Orbit Engineering Group - Office exterior",
+      title: "Orbit Engineering Group - Office exterior",
     },
     {
       src: receptionImage,
-      alt: "Sync Water Tech - Reception",
-      title: "Sync Water Tech - Reception",
+      alt: "Orbit Engineering Group - Reception",
+      title: "Orbit Engineering Group - Reception",
     },
   ];
 
@@ -85,20 +85,20 @@ const OfficeCarousel = () => {
 const TeamSection = () => {
   const leaders = [
     {
-      name: "Rohit Arora",
-      position: "Co-Founder & Technical Director",
-      experience: "20+ Years",
-      expertise: "Water Treatment Systems, Project Management",
-      email: "rohitarora@syncwatertech.com",
-      description: "Leading technical innovation with extensive experience in industrial automation and water treatment solutions."
+      name: "Manoj Tiwari",
+      position: "Managing Director",
+      experience: "40+ Years Experience",
+      expertise: "Water Infrastructure, Sustainable Technology Solutions",
+      email: "mktiwari@orbitengineering.com",
+      description: "Visionary leader with expertise in water infrastructure and sustainable technology solutions"
     },
     {
       name: "Vijay Tiwari",
-      position: "Co-Founder & Operations Director",
-      experience: "18+ Years",
-      expertise: "SCADA Systems, Automation, Operations",
-      email: "vijaytiwari@syncwatertech.com",
-      description: "Driving operational excellence with deep expertise in automation technologies and system integration."
+      position: "Co-Founder & CTO",
+      experience: "18+ Years Experience",
+      expertise: "Automation, IoT, Advanced Water Treatment Systems",
+      email: "vijay@orbitengineerings.com",
+      description: "Technical expert specializing in automation, IoT, and advanced water treatment systems."
     }
   ];
 
@@ -136,33 +136,33 @@ const TeamSection = () => {
         <div className="text-center mb-16 animate-fade-in-up">
           <Badge variant="secondary" className="mb-4 text-xl">
             <img src={ourTeamIcon} alt="Our Team" className="h-10 w-10 mr-3" />
-            Our Team
+            Orbit Engineering Group
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-foreground">Meet the Visionaries</span>
             <br />
-            <span className="text-primary animate-bounce">Powering Sync Water Tech</span>
+            <span className="text-primary animate-bounce">Powering Orbit Engineering Group</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-            Rohit Arora and Vijay Tiwari stand at the helm of a world-class team of water-technology 
-            engineers, project leads, marketing strategists, and finance experts. United by a shared 
+            Manoj Tiwari and Vijay Tiwari stand at the helm of a world-class team of water-technology
+            engineers, project leads, marketing strategists, and finance experts. United by a shared
             ambition, our team delivers seamlessly integrated, turnkey water infrastructure solutions.
           </p>
         </div>
 
-        
+
 
         {/* Leadership Team */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {leaders.map((leader, index) => (
             <Card key={index} className="hover-lift border-0 shadow-water bg-card/80 backdrop-blur-sm">
               <CardContent className="p-8">
-                  <div className="mb-6 animate-scale-in">
-                    <img 
-                      src={leader.name === "Rohit Arora" ? rohitAroraImage : vijayTiwariImage}
-                      alt={leader.name}
-                      className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover mb-4 mx-auto border-4 border-primary/20"
-                    />
+                <div className="mb-6 animate-scale-in">
+                  <img
+                    src={leader.name === "Manoj Tiwari" ? manojTiwariImage : vijayTiwariImage}
+                    alt={leader.name}
+                    className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover mb-4 mx-auto border-4 border-primary/20"
+                  />
                   <div className="text-center">
                     <h3 className="text-2xl font-bold mb-2">{leader.name}</h3>
                     <p className="text-primary font-semibold mb-2">{leader.position}</p>
@@ -171,17 +171,17 @@ const TeamSection = () => {
                     </Badge>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <p className="text-muted-foreground text-center">{leader.description}</p>
-                  
+
                   <div className="border-t border-border pt-4">
                     <p className="text-sm font-medium mb-2">Expertise:</p>
                     <p className="text-sm text-muted-foreground mb-4">{leader.expertise}</p>
-                    
+
                     <div className="flex items-center justify-center space-x-2 text-sm text-primary">
                       <Mail className="h-4 w-4" />
-                      <a 
+                      <a
                         href={`mailto:${leader.email}`}
                         className="hover:underline"
                       >
@@ -231,7 +231,7 @@ const TeamSection = () => {
                 Together, we engineer solutions that are not just resilient and efficient—
                 <span className="text-primary"> but transformative</span>
               </h3>
-              
+
             </CardContent>
           </Card>
         </div>
@@ -255,7 +255,7 @@ const TeamSection = () => {
 
                 <div className="grid md:grid-cols-2 gap-10 items-start">
                   <div className="space-y-6 px-6">
-                    <h4 className="text-2xl font-semibold">At Sync Water Tech, you’ll:</h4>
+                    <h4 className="text-2xl font-semibold">At Orbit Engineering Group, you’ll:</h4>
                     <ul className="space-y-4 mb-4">
                       <li className="flex items-start space-x-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
@@ -277,7 +277,7 @@ const TeamSection = () => {
                     <div className="relative overflow-hidden rounded-2xl shadow-float">
                       <img
                         src={careersImage}
-                        alt="Pioneering force in water technology at Sync Water Tech"
+                        alt="Pioneering force in water technology at Orbit Engineering Group"
                         className="w-full h-72 object-cover"
                       />
                     </div>
@@ -291,19 +291,19 @@ const TeamSection = () => {
                   <div className="grid md:grid-cols-3 gap-6 text-center px-6">
                     <div className="flex items-center justify-center space-x-2">
                       <a
-                        href="https://www.google.com/maps/search/?api=1&query=Flat%20no.1%2C%20Block%2012%2C%20Shalimar%20Enclave%2C%20E3%20Arera%20Colony%2C%20Bhopal.%20462016"
+                        href="https://www.google.com/maps/search/?api=1&query=Flat%20No.%202%2C%20Block%2012%2C%20Shalimar%20Enclave%2C%20E3%20Arera%20Colony%2C%20Bhopal%20462016"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm hover:text-primary transition-smooth"
                       >
-                        Flat no.1, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal. 462016
+                        Flat No. 2, Block 12, Shalimar Enclave, E3 Arera Colony, Bhopal – 462016
                       </a>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
-                      <a href="tel:+919425005008" className="text-sm hover:text-primary transition-smooth">+91-9425005008</a>
+                      <a href="tel:+917024128029" className="text-sm hover:text-primary transition-smooth">+91 70241 28029</a>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
-                      <a href="mailto:info@syncwatertech.com" className="text-sm hover:text-primary transition-smooth">info@syncwatertech.com</a>
+                      <a href="mailto:info@orbitengineerings.com" className="text-sm hover:text-primary transition-smooth">info@orbitengineerings.com</a>
                     </div>
                   </div>
                 </div>

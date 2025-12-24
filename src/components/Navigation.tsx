@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Gauge, FlaskConical, Settings, Droplets, Target, Hammer, BarChart3, Zap, Eye, Wrench, ChevronDown } from "lucide-react";
-import logo from "@/assets/syncwater-tech-logo.png";
+import logo from "@/assets/orbit-engineering-group.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,6 @@ const Navigation = () => {
     { name: "Partners", href: "/partners" },
     { name: "Clients", href: "/clients" },
     { name: "Solutions", href: "/solutions" },
-    { name: "FAQ", href: "/solutions#faq" },
     { name: "Team", href: "/team" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/#contact" },
@@ -79,8 +78,8 @@ const Navigation = () => {
           <div className="flex items-center hover-scale">
             <img
               src={logo}
-              alt="SyncWaterTech"
-              className="h-10 w-auto object-contain animate-pulse-glow"
+              alt="Orbit Engineering Group"
+              className="h-14 w-auto object-contain mix-blend-multiply"
             />
           </div>
 
@@ -98,11 +97,10 @@ const Navigation = () => {
                   >
                     <a
                       href={item.href}
-                      className={`group transition-all duration-300 font-medium relative py-2 px-3 rounded-lg flex items-center gap-1 ${
-                        active
-                          ? "text-primary bg-primary/10 border-b-2 border-primary"
-                          : "text-foreground/80 hover:text-primary hover:bg-primary/5"
-                      }`}
+                      className={`group transition-all duration-300 font-medium relative py-2 px-3 rounded-lg flex items-center gap-1 ${active
+                        ? "text-primary bg-primary/10 border-b-2 border-primary"
+                        : "text-foreground/80 hover:text-primary hover:bg-primary/5"
+                        }`}
                     >
                       {item.name}
                       <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isProductsOpen ? "rotate-180" : "rotate-0"}`} />
@@ -137,11 +135,10 @@ const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`transition-all duration-300 font-medium relative py-2 px-3 rounded-lg ${
-                    active
-                      ? "text-primary bg-primary/10 border-b-2 border-primary"
-                      : "text-foreground/80 hover:text-primary hover:bg-primary/5"
-                  }`}
+                  className={`transition-all duration-300 font-medium relative py-2 px-3 rounded-lg ${active
+                    ? "text-primary bg-primary/10 border-b-2 border-primary"
+                    : "text-foreground/80 hover:text-primary hover:bg-primary/5"
+                    }`}
                 >
                   {item.name}
                 </a>
@@ -173,11 +170,10 @@ const Navigation = () => {
                     <div key={item.name} className="space-y-1">
                       <a
                         href={item.href}
-                        className={`transition-all duration-300 font-medium px-3 py-2 rounded-lg ${
-                          active
-                            ? "text-primary bg-primary/10 border-l-4 border-primary"
-                            : "text-foreground/80 hover:text-primary hover:bg-primary/10"
-                        }`}
+                        className={`transition-all duration-300 font-medium px-3 py-2 rounded-lg ${active
+                          ? "text-primary bg-primary/10 border-l-4 border-primary"
+                          : "text-foreground/80 hover:text-primary hover:bg-primary/10"
+                          }`}
                         onClick={() => setIsOpen(false)}
                       >
                         {item.name}
@@ -204,11 +200,10 @@ const Navigation = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`transition-all duration-300 font-medium px-3 py-2 rounded-lg ${
-                      active
-                        ? "text-primary bg-primary/10 border-l-4 border-primary"
-                        : "text-foreground/80 hover:text-primary hover:bg-primary/10"
-                    }`}
+                    className={`transition-all duration-300 font-medium px-3 py-2 rounded-lg ${active
+                      ? "text-primary bg-primary/10 border-l-4 border-primary"
+                      : "text-foreground/80 hover:text-primary hover:bg-primary/10"
+                      }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}

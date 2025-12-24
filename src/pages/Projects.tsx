@@ -3,12 +3,12 @@ import ContactSection from "@/components/ContactSection";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { 
-  MapPin, 
-  Calendar, 
-  IndianRupee, 
-  Building, 
-  Droplets, 
+import {
+  MapPin,
+  Calendar,
+  IndianRupee,
+  Building,
+  Droplets,
   ArrowLeft,
   CheckCircle,
   Clock
@@ -211,30 +211,30 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             className="mb-8 text-primary hover:text-primary/80"
             onClick={() => window.history.back()}
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Home
           </Button>
-          
+
           <div className="text-center animate-fade-in-up">
             <Badge variant="secondary" className="mb-4">Project Portfolio</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="text-foreground">Our</span>
               <span className="text-primary"> Projects</span>
             </h1>
-            
+
           </div>
         </div>
       </section>
-      
+
       {/* Completed Projects - moved after Hero */}
       <section className="py-20 bg-muted/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,7 +272,6 @@ const Projects = () => {
                       {project.status}
                     </Badge>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-primary">{project.value}</div>
                     </div>
                   </div>
                   <CardTitle className="text-lg leading-tight">{project.name}</CardTitle>
@@ -315,7 +314,7 @@ const Projects = () => {
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-primary via-accent to-primary opacity-30"></div>
-            
+
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
                 <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -326,7 +325,6 @@ const Projects = () => {
                           <Badge variant="outline" className="text-primary border-primary">
                             {milestone.year}
                           </Badge>
-                          <div className="text-xl font-bold text-primary">{milestone.value}</div>
                         </div>
                         <h3 className="font-semibold text-lg mb-2">{milestone.project}</h3>
                         <p className="text-sm text-muted-foreground mb-3">{milestone.client}</p>
@@ -334,12 +332,12 @@ const Projects = () => {
                       </CardContent>
                     </Card>
                   </div>
-                  
+
                   {/* Center dot */}
                   <div className="relative z-10 w-8 h-8 bg-primary border-4 border-background rounded-full shadow-lg flex items-center justify-center">
                     <div className="w-3 h-3 bg-background rounded-full"></div>
                   </div>
-                  
+
                   <div className="w-1/2"></div>
                 </div>
               ))}
@@ -357,7 +355,7 @@ const Projects = () => {
                 <Clock className="h-8 w-8 inline-block mr-3 text-primary" />
                 Ongoing Projects
               </h2>
-              
+
             </div>
             <Badge variant="outline" className="text-primary border-primary">
               In Progress
@@ -385,7 +383,6 @@ const Projects = () => {
                       {project.status}
                     </Badge>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-primary">{project.value}</div>
                     </div>
                   </div>
                   <CardTitle className="text-lg leading-tight">{project.name}</CardTitle>
