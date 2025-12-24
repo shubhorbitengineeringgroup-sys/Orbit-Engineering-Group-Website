@@ -42,7 +42,13 @@ const ContactSection = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      value: "+91 70241 28029",
+      value: (
+        <div className="flex flex-col gap-1">
+          <a href="tel:+917024128029" className="hover:text-primary transition-colors hover:underline">+91 70241 28029</a>
+          <a href="tel:+918817770367" className="hover:text-primary transition-colors hover:underline">+91 88177 70367</a>
+          <a href="tel:+919893091450" className="hover:text-primary transition-colors hover:underline">+91 98930 91450</a>
+        </div>
+      ),
       action: "tel:+917024128029",
       description: "Call us directly for immediate assistance"
     },

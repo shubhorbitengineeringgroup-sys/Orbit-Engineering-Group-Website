@@ -72,8 +72,8 @@ const AboutSection = () => {
               Fortifying the Future of Water Management
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Orbit Engineering Group, we've merged the formidable 40-year legacy of Rajat Engineering with Orbit
-              Engineering's instrumentation mastery to set a new standard in water technology.
+              At Orbit Engineering Group, we've merged a formidable 40-year legacy of engineering excellence with
+              instrumentation mastery to set a new standard in water technology.
             </p>
           </div>
         </div>
@@ -190,9 +190,11 @@ const AboutSection = () => {
                 <Phone className="h-8 w-8" />
               </div>
               <h4 className="text-xl font-bold mb-4">Phone</h4>
-              <p className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">
-                +91 70241 28029
-              </p>
+              <div className="flex flex-col items-center gap-1">
+                <a href="tel:+917024128029" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">+91 70241 28029</a>
+                <a href="tel:+918817770367" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">+91 88177 70367</a>
+                <a href="tel:+919893091450" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors">+91 98930 91450</a>
+              </div>
             </a>
 
             <a

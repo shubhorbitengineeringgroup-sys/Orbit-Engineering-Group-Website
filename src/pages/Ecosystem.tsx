@@ -24,6 +24,13 @@ import nowatechLogo from "@/assets/partners/nowatech.png";
 import phoenixContactLogo from "@/assets/partners/phoenix-contact.png";
 import prominentLogo from "@/assets/partners/prominent.png";
 import rockwellAutomationLogo from "@/assets/partners/rockwell-automation.png";
+import microthermLogo from "@/assets/partners/microtherm.jpg";
+import siemensLogo from "@/assets/partners/siemens.jpg";
+import rotronicLogo from "@/assets/partners/rotronic.jpg";
+import secureLogo from "@/assets/partners/secure.jpg";
+import measurementSpecialtiesLogo from "@/assets/partners/measurement-specialties.jpg";
+import forbesMarshallLogo from "@/assets/partners/forbes-marshall.jpg";
+import regadaLogo from "@/assets/partners/regada.png";
 
 const Ecosystem = () => {
     const clients = [
@@ -43,10 +50,28 @@ const Ecosystem = () => {
 
     const partners = [
         {
+            id: "forbes-marshall",
+            name: "Forbes Marshall",
+            logo: forbesMarshallLogo,
+            category: "Process Efficiency"
+        },
+        {
             id: "fuji-electric",
             name: "Fuji Electric",
             logo: fujiElectricLogo,
             category: "Automation Solutions"
+        },
+        {
+            id: "measurement-specialties",
+            name: "Measurement Specialties",
+            logo: measurementSpecialtiesLogo,
+            category: "Sensors"
+        },
+        {
+            id: "microtherm",
+            name: "MICROTHERM",
+            logo: microthermLogo,
+            category: "Thermal Protection"
         },
         {
             id: "nivelco",
@@ -73,10 +98,34 @@ const Ecosystem = () => {
             category: "Water Treatment"
         },
         {
+            id: "regada",
+            name: "Regada",
+            logo: regadaLogo,
+            category: "Actuators"
+        },
+        {
             id: "rockwell-automation",
             name: "Rockwell Automation",
             logo: rockwellAutomationLogo,
             category: "Industrial Control"
+        },
+        {
+            id: "rotronic",
+            name: "Rotronic",
+            logo: rotronicLogo,
+            category: "Measurement Solutions"
+        },
+        {
+            id: "secure",
+            name: "SECURE",
+            logo: secureLogo,
+            category: "Energy Management"
+        },
+        {
+            id: "siemens",
+            name: "SIEMENS",
+            logo: siemensLogo,
+            category: "Industrial Automation"
         }
     ];
 
@@ -99,19 +148,58 @@ const Ecosystem = () => {
                         </p>
                     </div>
 
-                    <div className="bg-gradient-to-br from-card to-card/80 border border-border rounded-3xl p-12 shadow-float overflow-hidden mb-24">
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div className="bg-gradient-to-br from-card to-card/80 border border-border rounded-3xl p-6 md:p-12 shadow-float overflow-hidden mb-24 perspective-1000">
+                        <motion.div
+                            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true, margin: "-100px" }}
+                            variants={{
+                                visible: {
+                                    transition: {
+                                        staggerChildren: 0.1
+                                    }
+                                }
+                            }}
+                        >
                             {clients.map((client, index) => (
-                                <Card key={index} className="group bg-gradient-to-br from-background/80 to-muted/30 rounded-xl text-center hover-lift transition-all duration-500 hover:scale-105 hover:shadow-lg border border-border/50 animate-scale-in">
-                                    <CardContent className="p-6">
-                                        <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors overflow-hidden">
-                                            <img src={client.icon} alt={client.name} className={`${client.name === "Tejas Construction" ? "w-28 h-28" : "w-20 h-20"} object-contain`} />
-                                        </div>
-                                        <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">{client.name}</h4>
-                                    </CardContent>
-                                </Card>
+                                <motion.div
+                                    key={index}
+                                    variants={{
+                                        hidden: {
+                                            opacity: 0,
+                                            scale: 0,
+                                            rotateX: -90, // Start flipped back completely
+                                            y: 100,
+                                            filter: "blur(20px)",
+                                        },
+                                        visible: {
+                                            opacity: 1,
+                                            scale: 1,
+                                            rotateX: 0,
+                                            y: 0,
+                                            filter: "blur(0px)",
+                                            transition: {
+                                                type: "spring",
+                                                stiffness: 260,
+                                                damping: 20,
+                                                mass: 1
+                                            }
+                                        }
+                                    }}
+                                    style={{ transformStyle: "preserve-3d" }} // Enable 3D transitions
+                                >
+                                    <Card className="group bg-gradient-to-br from-background/80 to-muted/30 rounded-xl text-center hover-lift transition-all duration-500 hover:scale-105 hover:shadow-lg border border-border/50 h-full backface-hidden">
+                                        <CardContent className="p-4 md:p-6 h-full flex flex-col items-center justify-center">
+                                            <div className="w-20 h-20 md:w-24 md:h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-primary/20 transition-colors overflow-hidden p-3 shadow-inner transform group-hover:rotate-12 transition-transform duration-500">
+                                                <img src={client.icon} alt={client.name} className="w-full h-full object-contain drop-shadow-sm" />
+                                            </div>
+                                            <h4 className="font-semibold text-xs md:text-sm group-hover:text-primary transition-colors">{client.name}</h4>
+                                        </CardContent>
+                                    </Card>
+                                </motion.div>
                             ))}
-                        </div>
+                        </motion.div>
                     </div>
 
                     {/* Our Partners Section (Moved here from Partners page) */}
@@ -134,18 +222,24 @@ const Ecosystem = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
                     >
-                        <div className="bg-gradient-to-r from-primary/5 via-background to-primary/5 rounded-3xl p-8 border border-primary/10">
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                                {partners.map((partner, index) => (
-                                    <motion.div
-                                        key={partner.id}
-                                        className="group relative"
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                                        whileHover={{ scale: 1.05, rotate: 1 }}
+                        <div className="bg-gradient-to-r from-primary/5 via-background to-primary/5 rounded-3xl p-8 border border-primary/10 overflow-hidden">
+                            {/* Marquee Container */}
+                            <motion.div
+                                className="flex gap-8 w-max"
+                                animate={{ x: "-50%" }}
+                                transition={{
+                                    ease: "linear",
+                                    duration: 40,
+                                    repeat: Infinity,
+                                }}
+                            >
+                                {/* Duplicated list for seamless infinite scroll */}
+                                {[...partners, ...partners].map((partner, index) => (
+                                    <div
+                                        key={`${partner.id}-${index}`}
+                                        className="group relative flex-shrink-0 w-[220px]"
                                     >
-                                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl px-8 py-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 group-hover:border-primary/30 h-full flex flex-col items-center justify-center">
+                                        <div className="bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20 group-hover:border-primary/30 h-full flex flex-col items-center justify-center">
                                             <div className="w-24 h-24 bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl flex items-center justify-center mb-4 group-hover:from-primary/20 group-hover:to-primary/30 transition-all duration-300 flex-shrink-0">
                                                 <img src={partner.logo} alt={partner.name} className="w-20 h-20 object-contain object-center group-hover:scale-110 transition-transform duration-300" style={{ objectPosition: 'center' }} />
                                             </div>
@@ -154,9 +248,9 @@ const Ecosystem = () => {
                                         {/* Decorative elements */}
                                         <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                         <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-primary/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
                     </motion.div>
 

@@ -100,7 +100,7 @@ const TeamSection = () => {
     {
       icon: <Award className="h-6 w-6" />,
       title: "40-Year Legacy",
-      description: "Built on Rajat Engineering's steel staging and chlorination expertise"
+      description: "Built on decades of steel staging and chlorination expertise"
     },
     {
       icon: <Briefcase className="h-6 w-6" />,
@@ -294,7 +294,11 @@ const TeamSection = () => {
                       </a>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
-                      <a href="tel:+917024128029" className="text-sm hover:text-primary transition-smooth">+91 70241 28029</a>
+                      <div className="flex flex-col items-center gap-1">
+                        <a href="tel:+917024128029" className="text-sm hover:text-primary transition-smooth">+91 70241 28029</a>
+                        <a href="tel:+918817770367" className="text-sm hover:text-primary transition-smooth">+91 88177 70367</a>
+                        <a href="tel:+919893091450" className="text-sm hover:text-primary transition-smooth">+91 98930 91450</a>
+                      </div>
                     </div>
                     <div className="flex items-center justify-center space-x-2">
                       <a href="mailto:info@orbitengineerings.com" className="text-sm hover:text-primary transition-smooth">info@orbitengineerings.com</a>

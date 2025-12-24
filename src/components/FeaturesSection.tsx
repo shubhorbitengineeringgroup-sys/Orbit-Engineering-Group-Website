@@ -90,7 +90,7 @@ const FeaturesSection = () => {
                 <img
                   src={panoramicUpperLakeImage}
                   alt="Panoramic view of Upper Lake - Water infrastructure automation"
-                  className="w-full h-96 object-cover rounded-2xl shadow-xl"
+                  className="w-full h-auto max-h-[600px] object-contain rounded-2xl shadow-xl bg-black/5"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
                 <div className="absolute bottom-4 left-4 text-white">

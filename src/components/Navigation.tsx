@@ -160,7 +160,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 animate-slide-in-bottom">
+          <div className="md:hidden py-4 animate-slide-in-bottom max-h-[calc(100vh-4rem)] overflow-y-auto">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => {
                 const active = isActive(item.href);

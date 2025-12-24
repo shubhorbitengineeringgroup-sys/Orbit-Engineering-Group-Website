@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="text-left animate-fade-in-up">
             <div className="inline-flex items-center px-6 py-3 rounded-full glass border border-primary/20 mb-8 hover-glow">
               <Sparkles className="w-4 h-4 text-primary mr-2" />
-              <span className="text-sm font-semibold text-foreground">Founded 2022 • ISO 9001 Certified</span>
+              <span className="text-sm font-semibold text-foreground">Established 1998 • ISO 9001 Certified</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
@@ -72,8 +72,8 @@ const HeroSection = () => {
               {showMore && (
                 <>
                   <p className="text-foreground">
-                    Founded in April 2022 in Bhopal, the company builds on a legacy exceeding <span className="text-primary font-semibold">four decades of
-                      engineering excellence</span> through its parent firms, Rajat Engineering and Orbit Engineering, to deliver turnkey systems — from design
+                    Established in 1998 in Bhopal, the company builds on a legacy exceeding <span className="text-primary font-semibold">four decades of
+                      engineering excellence</span> to deliver turnkey systems — from design
                     and steel fabrication to PLC/SCADA integration and long-term O&amp;M — through an <span className="text-primary font-semibold">ISO 9001‑certified</span>
                     &nbsp;quality framework that guarantees reliability and ecological accountability.
                   </p>
